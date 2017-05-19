@@ -1,14 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BLUDHAVEN.ttf">
+            <string>Bludhaven_Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Social AppVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SocialAppVC" customModule="Social_App_FIrebase" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +23,105 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfG-ZW-Zwi">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="New logo" translatesAutoresizingMaskIntoConstraints="NO" id="4zX-p6-1vw">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="123" id="ok3-hh-Tyw"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.75686274509803919" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="9dx-OR-b3g"/>
+                                    <constraint firstItem="4zX-p6-1vw" firstAttribute="top" secondItem="hfG-ZW-Zwi" secondAttribute="top" constant="15" id="Kmc-dW-ZUO"/>
+                                    <constraint firstItem="4zX-p6-1vw" firstAttribute="bottom" secondItem="hfG-ZW-Zwi" secondAttribute="bottomMargin" id="KzW-QG-38T"/>
+                                    <constraint firstItem="4zX-p6-1vw" firstAttribute="leading" secondItem="hfG-ZW-Zwi" secondAttribute="leading" constant="116" id="eom-5R-wm2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyV-Pq-U0t">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are not registered on signing in, you will be registered automatically." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S36-Ks-zUW">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="7P1-iu-Sgm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Bludhaven_Regular" family="Bludhaven" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.79529644691780821" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.43529411764705883" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="S36-Ks-zUW" secondAttribute="trailing" constant="8" id="67z-aH-k6F"/>
+                                    <constraint firstAttribute="bottom" secondItem="S36-Ks-zUW" secondAttribute="bottom" constant="8" id="AIQ-cL-e5N"/>
+                                    <constraint firstAttribute="height" constant="66" id="AUA-fb-KXT"/>
+                                    <constraint firstItem="S36-Ks-zUW" firstAttribute="leading" secondItem="zyV-Pq-U0t" secondAttribute="leading" constant="8" id="CW3-Gj-G24"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign with your facebook Id or login id" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy4-fc-DMt">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1wd-tK-X4C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Bludhaven_Regular" family="Bludhaven" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjD-Gg-1V7">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="aQ3-hu-sRI"/>
+                                    <constraint firstAttribute="height" constant="140" id="gzL-Lb-2ry"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="facebook-icon-vectorlogofree.com.png"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="wuR-h1-DjK">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7T-eC-mwu">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Bludhaven_Regular" family="Bludhaven" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jev-A9-86a">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Bludhaven_Regular" family="Bludhaven" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dod-xC-1V3">
+                                        <color key="backgroundColor" red="0.74901960784313726" green="0.21176470588235294" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Bludhaven_Regular" family="Bludhaven" pointSize="21"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wuR-h1-DjK" firstAttribute="top" secondItem="AjD-Gg-1V7" secondAttribute="bottom" constant="30" id="5bd-mH-Vnc"/>
+                            <constraint firstItem="hfG-ZW-Zwi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5dS-Fo-cTY"/>
+                            <constraint firstItem="AjD-Gg-1V7" firstAttribute="centerX" secondItem="wy4-fc-DMt" secondAttribute="centerX" id="68F-8l-6gE"/>
+                            <constraint firstItem="wuR-h1-DjK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="6Tc-yx-h5w"/>
+                            <constraint firstAttribute="trailing" secondItem="wuR-h1-DjK" secondAttribute="trailing" constant="10" id="GG3-I3-t4g"/>
+                            <constraint firstItem="AjD-Gg-1V7" firstAttribute="top" secondItem="wy4-fc-DMt" secondAttribute="bottom" constant="40" id="Xlb-5A-h9S"/>
+                            <constraint firstItem="hfG-ZW-Zwi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="c7Q-ML-6It"/>
+                            <constraint firstItem="wy4-fc-DMt" firstAttribute="top" secondItem="hfG-ZW-Zwi" secondAttribute="bottom" constant="8" id="dGX-9m-JvI"/>
+                            <constraint firstItem="wy4-fc-DMt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fiP-yy-JT7"/>
+                            <constraint firstItem="wy4-fc-DMt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="g0b-C7-eX4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zyV-Pq-U0t" secondAttribute="bottom" id="gQ6-pf-iLC"/>
+                            <constraint firstAttribute="trailing" secondItem="zyV-Pq-U0t" secondAttribute="trailing" id="kZs-lU-O9J"/>
+                            <constraint firstItem="zyV-Pq-U0t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lgW-xi-RrM"/>
+                            <constraint firstAttribute="trailing" secondItem="hfG-ZW-Zwi" secondAttribute="trailing" id="plS-uM-Je2"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="New logo" width="200" height="200"/>
+        <image name="facebook-icon-vectorlogofree.com.png" width="188" height="186"/>
+    </resources>
 </document>

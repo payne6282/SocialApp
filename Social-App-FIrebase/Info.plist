@@ -39,5 +39,20 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1545414552144034</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>1545414552144034</string>
+	<key>FacebookDisplayName</key>
+	<string>Social-App</string>
+	<key>ATSApplicationFontsPath</key>
+	<string>BLUDHAVEN.ttf</string>
 </dict>
 </plist>

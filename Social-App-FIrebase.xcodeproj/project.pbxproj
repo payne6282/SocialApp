@@ -10,8 +10,32 @@
 		3C0B7D348F78617AF50B65D6 /* Pods_Social_App_FIrebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104B5F658BF70568783CC031 /* Pods_Social_App_FIrebase.framework */; };
 		9EC83BE3357BB9C4F0B714CA /* Pods_Social_App_FIrebaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60528E0F593E6A188071A03 /* Pods_Social_App_FIrebaseUITests.framework */; };
 		AEA4D4A32507D0B5E870E873 /* Pods_Social_App_FIrebaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED8CBCB6AAFE03E069950BA /* Pods_Social_App_FIrebaseTests.framework */; };
+		D70EA8E01ECF73E80086DAF0 /* BLUDHAVEN.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8DF1ECF73E80086DAF0 /* BLUDHAVEN.ttf */; };
+		D70EA8EB1ECF7E190086DAF0 /* facebook-icon-vectorlogofree.com.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8EA1ECF7E190086DAF0 /* facebook-icon-vectorlogofree.com.png */; };
+		D70EA9021ECF7E2A0086DAF0 /* add-image.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8EC1ECF7E2A0086DAF0 /* add-image.png */; };
+		D70EA9031ECF7E2A0086DAF0 /* add-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8ED1ECF7E2A0086DAF0 /* add-image@2x.png */; };
+		D70EA9041ECF7E2A0086DAF0 /* add-image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8EE1ECF7E2A0086DAF0 /* add-image@3x.png */; };
+		D70EA9051ECF7E2A0086DAF0 /* add-post.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8EF1ECF7E2A0086DAF0 /* add-post.png */; };
+		D70EA9061ECF7E2A0086DAF0 /* add-post@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8F01ECF7E2A0086DAF0 /* add-post@2x.png */; };
+		D70EA9071ECF7E2A0086DAF0 /* add-post@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8F11ECF7E2A0086DAF0 /* add-post@3x.png */; };
+		D70EA9081ECF7E2A0086DAF0 /* devslopes-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8F21ECF7E2A0086DAF0 /* devslopes-icon.png */; };
+		D70EA9091ECF7E2A0086DAF0 /* devslopes-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8F31ECF7E2A0086DAF0 /* devslopes-logo.png */; };
+		D70EA90A1ECF7E2A0086DAF0 /* empty-heart.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8F41ECF7E2A0086DAF0 /* empty-heart.png */; };
+		D70EA90B1ECF7E2A0086DAF0 /* empty-heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8F51ECF7E2A0086DAF0 /* empty-heart@2x.png */; };
+		D70EA90C1ECF7E2A0086DAF0 /* empty-heart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8F61ECF7E2A0086DAF0 /* empty-heart@3x.png */; };
+		D70EA90D1ECF7E2A0086DAF0 /* f.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8F71ECF7E2A0086DAF0 /* f.png */; };
+		D70EA90E1ECF7E2A0086DAF0 /* f@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8F81ECF7E2A0086DAF0 /* f@2x.png */; };
+		D70EA90F1ECF7E2A0086DAF0 /* f@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8F91ECF7E2A0086DAF0 /* f@3x.png */; };
+		D70EA9101ECF7E2A0086DAF0 /* filled-heart.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8FA1ECF7E2A0086DAF0 /* filled-heart.png */; };
+		D70EA9111ECF7E2A0086DAF0 /* filled-heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8FB1ECF7E2A0086DAF0 /* filled-heart@2x.png */; };
+		D70EA9121ECF7E2A0086DAF0 /* filled-heart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8FC1ECF7E2A0086DAF0 /* filled-heart@3x.png */; };
+		D70EA9131ECF7E2A0086DAF0 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8FD1ECF7E2A0086DAF0 /* placeholder.jpg */; };
+		D70EA9141ECF7E2A0086DAF0 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8FE1ECF7E2A0086DAF0 /* profile.jpg */; };
+		D70EA9151ECF7E2A0086DAF0 /* sign-out.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA8FF1ECF7E2A0086DAF0 /* sign-out.png */; };
+		D70EA9161ECF7E2A0086DAF0 /* sign-out@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA9001ECF7E2A0086DAF0 /* sign-out@2x.png */; };
+		D70EA9171ECF7E2A0086DAF0 /* sign-out@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EA9011ECF7E2A0086DAF0 /* sign-out@3x.png */; };
 		D714C5A11ECE87BB00EE67C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714C5A01ECE87BB00EE67C9 /* AppDelegate.swift */; };
-		D714C5A31ECE87BB00EE67C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714C5A21ECE87BB00EE67C9 /* ViewController.swift */; };
+		D714C5A31ECE87BB00EE67C9 /* SocialAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714C5A21ECE87BB00EE67C9 /* SocialAppVC.swift */; };
 		D714C5A61ECE87BB00EE67C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D714C5A41ECE87BB00EE67C9 /* Main.storyboard */; };
 		D714C5A81ECE87BB00EE67C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D714C5A71ECE87BB00EE67C9 /* Assets.xcassets */; };
 		D714C5AB1ECE87BB00EE67C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D714C5A91ECE87BB00EE67C9 /* LaunchScreen.storyboard */; };
@@ -47,11 +71,35 @@
 		BED8CBCB6AAFE03E069950BA /* Pods_Social_App_FIrebaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_App_FIrebaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08C95FB2D751CEDE4F7BC7D /* Pods-Social-App-FIrebaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-App-FIrebaseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social-App-FIrebaseUITests/Pods-Social-App-FIrebaseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D60528E0F593E6A188071A03 /* Pods_Social_App_FIrebaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_App_FIrebaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D70EA8DF1ECF73E80086DAF0 /* BLUDHAVEN.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BLUDHAVEN.ttf; sourceTree = "<group>"; };
+		D70EA8EA1ECF7E190086DAF0 /* facebook-icon-vectorlogofree.com.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-icon-vectorlogofree.com.png"; sourceTree = "<group>"; };
+		D70EA8EC1ECF7E2A0086DAF0 /* add-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-image.png"; sourceTree = "<group>"; };
+		D70EA8ED1ECF7E2A0086DAF0 /* add-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-image@2x.png"; sourceTree = "<group>"; };
+		D70EA8EE1ECF7E2A0086DAF0 /* add-image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-image@3x.png"; sourceTree = "<group>"; };
+		D70EA8EF1ECF7E2A0086DAF0 /* add-post.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-post.png"; sourceTree = "<group>"; };
+		D70EA8F01ECF7E2A0086DAF0 /* add-post@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-post@2x.png"; sourceTree = "<group>"; };
+		D70EA8F11ECF7E2A0086DAF0 /* add-post@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-post@3x.png"; sourceTree = "<group>"; };
+		D70EA8F21ECF7E2A0086DAF0 /* devslopes-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "devslopes-icon.png"; sourceTree = "<group>"; };
+		D70EA8F31ECF7E2A0086DAF0 /* devslopes-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "devslopes-logo.png"; sourceTree = "<group>"; };
+		D70EA8F41ECF7E2A0086DAF0 /* empty-heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty-heart.png"; sourceTree = "<group>"; };
+		D70EA8F51ECF7E2A0086DAF0 /* empty-heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty-heart@2x.png"; sourceTree = "<group>"; };
+		D70EA8F61ECF7E2A0086DAF0 /* empty-heart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty-heart@3x.png"; sourceTree = "<group>"; };
+		D70EA8F71ECF7E2A0086DAF0 /* f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f.png; sourceTree = "<group>"; };
+		D70EA8F81ECF7E2A0086DAF0 /* f@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f@2x.png"; sourceTree = "<group>"; };
+		D70EA8F91ECF7E2A0086DAF0 /* f@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f@3x.png"; sourceTree = "<group>"; };
+		D70EA8FA1ECF7E2A0086DAF0 /* filled-heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filled-heart.png"; sourceTree = "<group>"; };
+		D70EA8FB1ECF7E2A0086DAF0 /* filled-heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filled-heart@2x.png"; sourceTree = "<group>"; };
+		D70EA8FC1ECF7E2A0086DAF0 /* filled-heart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filled-heart@3x.png"; sourceTree = "<group>"; };
+		D70EA8FD1ECF7E2A0086DAF0 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		D70EA8FE1ECF7E2A0086DAF0 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
+		D70EA8FF1ECF7E2A0086DAF0 /* sign-out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-out.png"; sourceTree = "<group>"; };
+		D70EA9001ECF7E2A0086DAF0 /* sign-out@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-out@2x.png"; sourceTree = "<group>"; };
+		D70EA9011ECF7E2A0086DAF0 /* sign-out@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-out@3x.png"; sourceTree = "<group>"; };
 		D714C59D1ECE87BB00EE67C9 /* Social-App-FIrebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social-App-FIrebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D714C5A01ECE87BB00EE67C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D714C5A21ECE87BB00EE67C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D714C5A21ECE87BB00EE67C9 /* SocialAppVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAppVC.swift; sourceTree = "<group>"; };
 		D714C5A51ECE87BB00EE67C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D714C5A71ECE87BB00EE67C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D714C5A71ECE87BB00EE67C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/newmac/Documents/Social-App-FIrebase/Social-App-FIrebase/Assets.xcassets"; sourceTree = "<absolute>"; };
 		D714C5AA1ECE87BB00EE67C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D714C5AC1ECE87BB00EE67C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D714C5B11ECE87BB00EE67C9 /* Social-App-FIrebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Social-App-FIrebaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +162,66 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D70EA8E31ECF76300086DAF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D70EA8DF1ECF73E80086DAF0 /* BLUDHAVEN.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D70EA8E41ECF763A0086DAF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D70EA8E51ECF76450086DAF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D70EA8E61ECF764E0086DAF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D714C5A21ECE87BB00EE67C9 /* SocialAppVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D70EA8E91ECF7E0A0086DAF0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D70EA8EC1ECF7E2A0086DAF0 /* add-image.png */,
+				D70EA8ED1ECF7E2A0086DAF0 /* add-image@2x.png */,
+				D70EA8EE1ECF7E2A0086DAF0 /* add-image@3x.png */,
+				D70EA8EF1ECF7E2A0086DAF0 /* add-post.png */,
+				D70EA8F01ECF7E2A0086DAF0 /* add-post@2x.png */,
+				D70EA8F11ECF7E2A0086DAF0 /* add-post@3x.png */,
+				D70EA8F21ECF7E2A0086DAF0 /* devslopes-icon.png */,
+				D70EA8F31ECF7E2A0086DAF0 /* devslopes-logo.png */,
+				D70EA8F41ECF7E2A0086DAF0 /* empty-heart.png */,
+				D70EA8F51ECF7E2A0086DAF0 /* empty-heart@2x.png */,
+				D70EA8F61ECF7E2A0086DAF0 /* empty-heart@3x.png */,
+				D70EA8F71ECF7E2A0086DAF0 /* f.png */,
+				D70EA8F81ECF7E2A0086DAF0 /* f@2x.png */,
+				D70EA8F91ECF7E2A0086DAF0 /* f@3x.png */,
+				D70EA8FA1ECF7E2A0086DAF0 /* filled-heart.png */,
+				D70EA8FB1ECF7E2A0086DAF0 /* filled-heart@2x.png */,
+				D70EA8FC1ECF7E2A0086DAF0 /* filled-heart@3x.png */,
+				D70EA8FD1ECF7E2A0086DAF0 /* placeholder.jpg */,
+				D70EA8FE1ECF7E2A0086DAF0 /* profile.jpg */,
+				D70EA8FF1ECF7E2A0086DAF0 /* sign-out.png */,
+				D70EA9001ECF7E2A0086DAF0 /* sign-out@2x.png */,
+				D70EA9011ECF7E2A0086DAF0 /* sign-out@3x.png */,
+				D70EA8EA1ECF7E190086DAF0 /* facebook-icon-vectorlogofree.com.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		D714C5941ECE87BA00EE67C9 = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +247,14 @@
 		D714C59F1ECE87BB00EE67C9 /* Social-App-FIrebase */ = {
 			isa = PBXGroup;
 			children = (
+				D70EA8E91ECF7E0A0086DAF0 /* Images */,
+				D70EA8E61ECF764E0086DAF0 /* Controller */,
+				D70EA8E51ECF76450086DAF0 /* View */,
+				D70EA8E41ECF763A0086DAF0 /* Model */,
+				D70EA8E31ECF76300086DAF0 /* Resources */,
 				D714C5A01ECE87BB00EE67C9 /* AppDelegate.swift */,
-				D714C5A21ECE87BB00EE67C9 /* ViewController.swift */,
-				D714C5A41ECE87BB00EE67C9 /* Main.storyboard */,
 				D714C5A71ECE87BB00EE67C9 /* Assets.xcassets */,
+				D714C5A41ECE87BB00EE67C9 /* Main.storyboard */,
 				D714C5A91ECE87BB00EE67C9 /* LaunchScreen.storyboard */,
 				D714C5AC1ECE87BB00EE67C9 /* Info.plist */,
 				D714C5CE1ECE883300EE67C9 /* GoogleService-Info.plist */,
@@ -285,10 +397,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70EA9021ECF7E2A0086DAF0 /* add-image.png in Resources */,
+				D70EA9131ECF7E2A0086DAF0 /* placeholder.jpg in Resources */,
+				D70EA9071ECF7E2A0086DAF0 /* add-post@3x.png in Resources */,
+				D70EA9061ECF7E2A0086DAF0 /* add-post@2x.png in Resources */,
+				D70EA9051ECF7E2A0086DAF0 /* add-post.png in Resources */,
 				D714C5AB1ECE87BB00EE67C9 /* LaunchScreen.storyboard in Resources */,
+				D70EA8EB1ECF7E190086DAF0 /* facebook-icon-vectorlogofree.com.png in Resources */,
+				D70EA9041ECF7E2A0086DAF0 /* add-image@3x.png in Resources */,
+				D70EA9101ECF7E2A0086DAF0 /* filled-heart.png in Resources */,
+				D70EA90A1ECF7E2A0086DAF0 /* empty-heart.png in Resources */,
+				D70EA9081ECF7E2A0086DAF0 /* devslopes-icon.png in Resources */,
+				D70EA9161ECF7E2A0086DAF0 /* sign-out@2x.png in Resources */,
 				D714C5CF1ECE883300EE67C9 /* GoogleService-Info.plist in Resources */,
 				D714C5A81ECE87BB00EE67C9 /* Assets.xcassets in Resources */,
+				D70EA9121ECF7E2A0086DAF0 /* filled-heart@3x.png in Resources */,
+				D70EA9091ECF7E2A0086DAF0 /* devslopes-logo.png in Resources */,
+				D70EA9111ECF7E2A0086DAF0 /* filled-heart@2x.png in Resources */,
+				D70EA90E1ECF7E2A0086DAF0 /* f@2x.png in Resources */,
+				D70EA90D1ECF7E2A0086DAF0 /* f.png in Resources */,
+				D70EA8E01ECF73E80086DAF0 /* BLUDHAVEN.ttf in Resources */,
+				D70EA9151ECF7E2A0086DAF0 /* sign-out.png in Resources */,
+				D70EA90C1ECF7E2A0086DAF0 /* empty-heart@3x.png in Resources */,
+				D70EA90F1ECF7E2A0086DAF0 /* f@3x.png in Resources */,
+				D70EA9031ECF7E2A0086DAF0 /* add-image@2x.png in Resources */,
 				D714C5A61ECE87BB00EE67C9 /* Main.storyboard in Resources */,
+				D70EA9141ECF7E2A0086DAF0 /* profile.jpg in Resources */,
+				D70EA90B1ECF7E2A0086DAF0 /* empty-heart@2x.png in Resources */,
+				D70EA9171ECF7E2A0086DAF0 /* sign-out@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D714C5A31ECE87BB00EE67C9 /* ViewController.swift in Sources */,
+				D714C5A31ECE87BB00EE67C9 /* SocialAppVC.swift in Sources */,
 				D714C5A11ECE87BB00EE67C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,6 +841,7 @@
 				D714C5C71ECE87BB00EE67C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D714C5C81ECE87BB00EE67C9 /* Build configuration list for PBXNativeTarget "Social-App-FIrebaseTests" */ = {
 			isa = XCConfigurationList;
@@ -713,6 +850,7 @@
 				D714C5CA1ECE87BB00EE67C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D714C5CB1ECE87BB00EE67C9 /* Build configuration list for PBXNativeTarget "Social-App-FIrebaseUITests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +859,7 @@
 				D714C5CD1ECE87BB00EE67C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
