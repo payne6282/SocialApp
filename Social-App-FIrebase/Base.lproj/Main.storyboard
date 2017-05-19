@@ -21,26 +21,26 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfG-ZW-Zwi">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfG-ZW-Zwi" customClass="LoginTopViewUV" customModule="Social_App_FIrebase" customModuleProvider="target">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="New logo" translatesAutoresizingMaskIntoConstraints="NO" id="4zX-p6-1vw">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="New logo" translatesAutoresizingMaskIntoConstraints="NO" id="4zX-p6-1vw">
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="123" id="ok3-hh-Tyw"/>
+                                            <constraint firstAttribute="height" constant="113" id="5Wq-JV-bEX"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.75686274509803919" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="136" id="9dx-OR-b3g"/>
-                                    <constraint firstItem="4zX-p6-1vw" firstAttribute="top" secondItem="hfG-ZW-Zwi" secondAttribute="top" constant="15" id="Kmc-dW-ZUO"/>
-                                    <constraint firstItem="4zX-p6-1vw" firstAttribute="bottom" secondItem="hfG-ZW-Zwi" secondAttribute="bottomMargin" id="KzW-QG-38T"/>
-                                    <constraint firstItem="4zX-p6-1vw" firstAttribute="leading" secondItem="hfG-ZW-Zwi" secondAttribute="leading" constant="116" id="eom-5R-wm2"/>
+                                    <constraint firstItem="4zX-p6-1vw" firstAttribute="leading" secondItem="hfG-ZW-Zwi" secondAttribute="leading" constant="70" id="TXv-CV-QiW"/>
+                                    <constraint firstAttribute="trailing" secondItem="4zX-p6-1vw" secondAttribute="trailing" constant="70" id="eAj-hw-RZh"/>
+                                    <constraint firstAttribute="bottom" secondItem="4zX-p6-1vw" secondAttribute="bottom" constant="8" id="vuL-ft-LiE"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyV-Pq-U0t">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyV-Pq-U0t" customClass="LoginTopViewUV" customModule="Social_App_FIrebase" customModuleProvider="target">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are not registered on signing in, you will be registered automatically." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S36-Ks-zUW">
                                         <constraints>
@@ -63,18 +63,21 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1wd-tK-X4C"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Bludhaven_Regular" family="Bludhaven" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Bludhaven_Regular" family="Bludhaven" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjD-Gg-1V7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjD-Gg-1V7" customClass="FBLoginButtonUB" customModule="Social_App_FIrebase" customModuleProvider="target">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="aQ3-hu-sRI"/>
-                                    <constraint firstAttribute="height" constant="140" id="gzL-Lb-2ry"/>
+                                    <constraint firstAttribute="width" constant="110" id="aQ3-hu-sRI"/>
+                                    <constraint firstAttribute="height" constant="110" id="gzL-Lb-2ry"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="facebook-icon-vectorlogofree.com"/>
+                                <connections>
+                                    <action selector="FBButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EqL-1i-BWx"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="wuR-h1-DjK">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="wuR-h1-DjK">
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7T-eC-mwu">
                                         <nil key="textColor"/>
@@ -86,11 +89,11 @@
                                         <fontDescription key="fontDescription" name="Bludhaven_Regular" family="Bludhaven" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dod-xC-1V3">
-                                        <color key="backgroundColor" red="0.74901960784313726" green="0.21176470588235294" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dod-xC-1V3" customClass="FBLoginButtonUB" customModule="Social_App_FIrebase" customModuleProvider="target">
+                                        <color key="backgroundColor" red="0.90196078431372551" green="0.31764705882352939" blue="0.0" alpha="0.92706549657534243" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Bludhaven_Regular" family="Bludhaven" pointSize="21"/>
                                         <state key="normal" title="Login">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                 </subviews>
@@ -98,7 +101,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wuR-h1-DjK" firstAttribute="top" secondItem="AjD-Gg-1V7" secondAttribute="bottom" constant="30" id="5bd-mH-Vnc"/>
+                            <constraint firstItem="wuR-h1-DjK" firstAttribute="top" secondItem="AjD-Gg-1V7" secondAttribute="bottom" constant="50" id="5bd-mH-Vnc"/>
                             <constraint firstItem="hfG-ZW-Zwi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5dS-Fo-cTY"/>
                             <constraint firstItem="AjD-Gg-1V7" firstAttribute="centerX" secondItem="wy4-fc-DMt" secondAttribute="centerX" id="68F-8l-6gE"/>
                             <constraint firstItem="wuR-h1-DjK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="6Tc-yx-h5w"/>
