@@ -72,7 +72,7 @@
                                     <constraint firstAttribute="width" constant="140" id="aQ3-hu-sRI"/>
                                     <constraint firstAttribute="height" constant="140" id="gzL-Lb-2ry"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="facebook-icon-vectorlogofree.com.png"/>
+                                <state key="normal" title="Button" image="facebook-icon-vectorlogofree.com"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="wuR-h1-DjK">
                                 <subviews>
@@ -122,6 +122,6 @@
     </scenes>
     <resources>
         <image name="New logo" width="200" height="200"/>
-        <image name="facebook-icon-vectorlogofree.com.png" width="188" height="186"/>
+        <image name="facebook-icon-vectorlogofree.com" width="188" height="186"/>
     </resources>
 </document>
