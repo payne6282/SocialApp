@@ -21,7 +21,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfG-ZW-Zwi" customClass="LoginTopViewUV" customModule="Social_App_FIrebase" customModuleProvider="target">
@@ -87,7 +87,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jev-A9-86a">
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Bludhaven_Regular" family="Bludhaven" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dod-xC-1V3" customClass="FBLoginButtonUB" customModule="Social_App_FIrebase" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.90196078431372551" green="0.31764705882352939" blue="0.0" alpha="0.92706549657534243" colorSpace="calibratedRGB"/>
@@ -95,6 +95,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iX0-BF-M1k"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -117,10 +120,63 @@
                             <constraint firstAttribute="trailing" secondItem="hfG-ZW-Zwi" secondAttribute="trailing" id="plS-uM-Je2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailFieldTextFld" destination="e7T-eC-mwu" id="0Vy-Fz-Rlx"/>
+                        <outlet property="passwdFldTxt" destination="Jev-A9-86a" id="CfT-kc-jQF"/>
+                        <segue destination="NwJ-2s-tcJ" kind="show" identifier="feedVC" id="gae-4J-gKw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+            <point key="canvasLocation" x="110" y="118"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="GoF-cZ-7hi">
+            <objects>
+                <viewController id="NwJ-2s-tcJ" customClass="FeedVC" customModule="Social_App_FIrebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I4d-yK-3xE"/>
+                        <viewControllerLayoutGuide type="bottom" id="CAu-dz-1pU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V52-il-fjf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7N-KY-b8Q">
+                                <frame key="frameInset" minX="20" minY="20" width="90" height="30"/>
+                                <state key="normal" title="Sign out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutBtn:" destination="NwJ-2s-tcJ" eventType="touchUpInside" id="0vi-Yx-7ig"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-aT-o7l">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Jx5-zM-9fs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.30283436070000003" blue="0.22251518449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.48498575020000001" green="0.87509899000000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bd5-aT-o7l" firstAttribute="top" secondItem="m7N-KY-b8Q" secondAttribute="bottom" constant="1" id="WnM-h2-YTJ"/>
+                            <constraint firstItem="bd5-aT-o7l" firstAttribute="leading" secondItem="m7N-KY-b8Q" secondAttribute="leading" id="jjo-Ua-lWI"/>
+                            <constraint firstItem="bd5-aT-o7l" firstAttribute="trailing" secondItem="V52-il-fjf" secondAttribute="trailingMargin" id="jt4-Qe-gHN"/>
+                            <constraint firstItem="CAu-dz-1pU" firstAttribute="top" secondItem="bd5-aT-o7l" secondAttribute="bottom" constant="595" id="oMJ-Jw-Cag"/>
+                            <constraint firstItem="bd5-aT-o7l" firstAttribute="leading" secondItem="V52-il-fjf" secondAttribute="leadingMargin" constant="4" id="pNZ-nw-LJG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helloLabel" destination="bd5-aT-o7l" id="Fvv-o4-Dy5"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="signInVC" id="oAa-JT-QC1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzK-ED-hH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="-473.6131934032984"/>
         </scene>
     </scenes>
     <resources>
