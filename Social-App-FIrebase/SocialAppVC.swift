@@ -63,7 +63,7 @@ class SocialAppVC: UIViewController {
                 if let user = user {
                     print("Sac: This is uid - \(user.uid)")
                     self.trySaveKeychains(id: user.email!)
-                
+                    
                 }
             }
         })
@@ -83,9 +83,9 @@ class SocialAppVC: UIViewController {
                     if let user = user {
                         print("Sac: This is uid - \(user.email)")
                         self.trySaveKeychains(id: user.email!)
-                    
+                        
                     }
-                 
+                    
                     self.performSegue(withIdentifier: "feedVC", sender: self)
                     
                 } else {
@@ -113,7 +113,7 @@ class SocialAppVC: UIViewController {
                         
                     })
                     
-                self.performSegue(withIdentifier: "feedVC", sender: self)
+                    self.performSegue(withIdentifier: "feedVC", sender: self)
                 }
             })
             
@@ -125,14 +125,14 @@ class SocialAppVC: UIViewController {
         EMAIL_PASSED = id
         let keyChain = KeychainWrapper.standard.set(id, forKey: "uid")
         print("Sac: Keychain saved \(keyChain)")
-    
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "feedVC" {
             if let feedId = segue.destination as? FeedVC {
-                    print("Sac: Set the email field to segue - \(EMAIL_PASSED)")
-                    feedId.email = EMAIL_PASSED
+                print("Sac: Set the email field to segue - \(EMAIL_PASSED)")
+                feedId.email = EMAIL_PASSED
                 
             }
         }
