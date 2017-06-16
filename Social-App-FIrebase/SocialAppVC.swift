@@ -62,7 +62,8 @@ class SocialAppVC: UIViewController {
                 
                 if let user = user {
                     print("Sac: This is uid - \(user.uid)")
-                    self.trySaveKeychains(id: user.email!)
+                    let userData = ["provider": credentials.provider]
+                    self.trySaveKeychains(id: user.email!, uid: user.uid, userData: userData)
                     
                 }
             }
@@ -82,7 +83,8 @@ class SocialAppVC: UIViewController {
                     
                     if let user = user {
                         print("Sac: This is uid - \(user.email)")
-                        self.trySaveKeychains(id: user.email!)
+                        let userData = ["provider": user.providerID]
+                        self.trySaveKeychains(id: user.email!, uid: user.uid, userData: userData)
                         
                     }
                     
@@ -98,7 +100,8 @@ class SocialAppVC: UIViewController {
                             if let user = user {
                                 
                                 print("Sac: This is uid - \(user.uid)")
-                                self.trySaveKeychains(id: user.email!)
+                                let userData = ["provider": user.providerID]
+                                self.trySaveKeychains(id: user.email!, uid: user.uid, userData: userData)
                                 print("Sac: User email- \(user.email) ")
                                 
                                 
@@ -120,7 +123,8 @@ class SocialAppVC: UIViewController {
         }
     }
     
-    func trySaveKeychains(id: String) {
+    func trySaveKeychains(id: String, uid: String, userData: Dictionary<String, String>) {
+        Dataservice.db.createfireBaseUser(uid: uid, userData: userData)
         print("Sac: UID passed in function is - \(id)")
         EMAIL_PASSED = id
         let keyChain = KeychainWrapper.standard.set(id, forKey: "uid")
@@ -138,7 +142,7 @@ class SocialAppVC: UIViewController {
         }
     }
     
-    
+
     
     
     

@@ -208,23 +208,25 @@
                                     <constraint firstItem="M6B-yO-ya7" firstAttribute="leading" secondItem="9ab-Km-1w8" secondAttribute="leading" id="jKb-t7-MQq"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="389" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MRY-aT-x8v">
-                                <color key="backgroundColor" red="0.69803921568627447" green="0.92156862745098034" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="389" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MRY-aT-x8v">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="389" id="MaH-Ef-LaB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="389" id="MaH-Ef-LaB" customClass="PostCell" customModule="Social_App_FIrebase" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="365" height="389"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MaH-Ef-LaB" id="ism-4H-tQD">
                                             <frame key="frameInset" width="365" height="388"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5g-fn-SQt" customClass="LoginTopViewUV" customModule="Social_App_FIrebase" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5g-fn-SQt">
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Qn0-Q4-WAp">
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="ZqS-P4-L33"/>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The heading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nua-wS-D45">
-                                                                    <color key="backgroundColor" red="0.97849757653396174" green="1" blue="0.99501412746660767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="backgroundColor" red="0.8784313725490196" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="214" id="sWo-c1-H3Y"/>
                                                                     </constraints>
@@ -269,13 +271,13 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="Qn0-Q4-WAp" firstAttribute="top" secondItem="F5g-fn-SQt" secondAttribute="top" constant="5" id="3Rm-sc-Zf6"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Qn0-Q4-WAp" secondAttribute="bottom" constant="319" id="6CP-I9-Oh9"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Qn0-Q4-WAp" secondAttribute="bottom" constant="311.5" id="6CP-I9-Oh9"/>
                                                         <constraint firstAttribute="trailing" secondItem="COc-SF-MNg" secondAttribute="trailing" constant="8" id="EEa-8l-gWd"/>
                                                         <constraint firstItem="Qn0-Q4-WAp" firstAttribute="leading" secondItem="F5g-fn-SQt" secondAttribute="leading" constant="5" id="Hrg-qK-wRc"/>
                                                         <constraint firstItem="Qn0-Q4-WAp" firstAttribute="centerX" secondItem="F5g-fn-SQt" secondAttribute="centerX" id="MNv-f5-b1v"/>
                                                         <constraint firstItem="kte-yT-aIR" firstAttribute="top" secondItem="Qn0-Q4-WAp" secondAttribute="bottom" constant="8" id="RAi-hl-1BX"/>
                                                         <constraint firstAttribute="trailing" secondItem="YCb-5S-Rde" secondAttribute="trailing" constant="10" id="XQ6-fi-0c8"/>
-                                                        <constraint firstAttribute="bottom" secondItem="YCb-5S-Rde" secondAttribute="bottom" constant="8" id="aLS-hu-NrG"/>
+                                                        <constraint firstAttribute="bottom" secondItem="YCb-5S-Rde" secondAttribute="bottom" constant="0.5" id="aLS-hu-NrG"/>
                                                         <constraint firstItem="COc-SF-MNg" firstAttribute="leading" secondItem="F5g-fn-SQt" secondAttribute="leading" constant="8" id="jUS-xT-xSD"/>
                                                         <constraint firstAttribute="trailing" secondItem="kte-yT-aIR" secondAttribute="trailing" constant="8" id="wWA-aK-I6e"/>
                                                         <constraint firstItem="kte-yT-aIR" firstAttribute="leading" secondItem="F5g-fn-SQt" secondAttribute="leading" constant="8" id="wvy-0M-Qnl"/>
@@ -284,6 +286,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.8784313725490196" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="F5g-fn-SQt" firstAttribute="leading" secondItem="ism-4H-tQD" secondAttribute="leading" id="oOw-Co-lVw"/>
                                                 <constraint firstAttribute="bottom" secondItem="F5g-fn-SQt" secondAttribute="bottom" id="rhu-0U-K0C"/>
@@ -291,11 +294,22 @@
                                                 <constraint firstAttribute="trailing" secondItem="F5g-fn-SQt" secondAttribute="trailing" id="xcA-oY-gdJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="DescLbl" destination="COc-SF-MNg" id="3Gp-sW-V1I"/>
+                                            <outlet property="heartImg" destination="lLo-Vr-d2t" id="YkQ-hp-30C"/>
+                                            <outlet property="likesCountLbl" destination="oUQ-lw-Zfx" id="zYf-01-iUD"/>
+                                            <outlet property="likesLbl" destination="j44-YS-JsU" id="Gls-7P-xty"/>
+                                            <outlet property="placeHolderImg" destination="kte-yT-aIR" id="8RJ-HQ-N6e"/>
+                                            <outlet property="profilePic" destination="ZqS-P4-L33" id="rqD-vN-fF4"/>
+                                            <outlet property="userNameLbl" destination="nua-wS-D45" id="a56-YE-7qJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9ab-Km-1w8" firstAttribute="leading" secondItem="V52-il-fjf" secondAttribute="leading" constant="5" id="22E-MI-1XN"/>
                             <constraint firstAttribute="trailing" secondItem="MRY-aT-x8v" secondAttribute="trailing" constant="5" id="7WW-nV-D2j"/>
@@ -311,6 +325,7 @@
                     </view>
                     <connections>
                         <outlet property="helloLabel" destination="o5P-Ui-b3U" id="qyQ-DF-SbA"/>
+                        <outlet property="tableView" destination="MRY-aT-x8v" id="Cl1-O5-H04"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="signInVC" id="oAa-JT-QC1"/>
                     </connections>
                 </viewController>

@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import Firebase
 
 var KEY_UID = "uid"
 var EMAIL_PASSED = ""
+var BASE_URL = FIRDatabase.database().reference()
+
