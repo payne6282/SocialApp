@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class PostCell: UITableViewCell {
+    
+    var post: Posts!
 
     @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var userNameLbl: UILabel!
@@ -17,13 +21,31 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var DescLbl: UILabel!
     @IBOutlet weak var likesLbl: UILabel!
     @IBOutlet weak var likesCountLbl: UILabel!
-    
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
+    
+    
+    func configureCell(post: Posts) {
+        self.post = post
+        self.DescLbl.text = post.postCaption
+        self.likesCountLbl.text = "\(post.postLikes)"
+        let downloadUrl = post.postImageUrl
+        let urlRequest = URLRequest(url: URL(string: downloadUrl)!)
+        let downloader = ImageDownloader()
+        Alamofire.request(downloadUrl).responseImage { response in
+            if let image = response.result.value {
+                self.placeHolderImg.image = image
+            }
+        }
+        
+        /*downloader.download(urlRequest) { response in
+           
+            if let image = response.result.value {
+                self.placeHolderImg.image = image
+            }
+        }*/
+        
+    }
+    
+    
     
 }

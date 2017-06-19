@@ -1,4 +1,7 @@
 PODS:
+  - Alamofire (4.5.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -60,6 +63,7 @@ PODS:
   - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
+  - AlamofireImage (~> 3.1)
   - FacebookCore
   - FacebookLogin
   - Firebase/Auth
@@ -69,6 +73,8 @@ DEPENDENCIES:
   - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
   FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
@@ -85,6 +91,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: 625ded3e79003c37636e7e00f80107bf7a5c1694
+PODFILE CHECKSUM: 64c491b63845b043a0db32b232ca54d35433b2b8
 
 COCOAPODS: 1.2.1

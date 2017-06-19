@@ -23,6 +23,7 @@
 		D714C5C11ECE87BB00EE67C9 /* Social_App_FIrebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714C5C01ECE87BB00EE67C9 /* Social_App_FIrebaseUITests.swift */; };
 		D714C5CF1ECE883300EE67C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D714C5CE1ECE883300EE67C9 /* GoogleService-Info.plist */; };
 		D760955E1EF2F4FE0084A542 /* Dataservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D760955D1EF2F4FE0084A542 /* Dataservice.swift */; };
+		D76095601EF4594B0084A542 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D760955F1EF4594B0084A542 /* Posts.swift */; };
 		D79B1E701EE07AAF00AB2418 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B1E6F1EE07AAF00AB2418 /* Constants.swift */; };
 		D79B1E721EE0823800AB2418 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B1E711EE0823800AB2418 /* FeedVC.swift */; };
 		D79B1E751EE0A5B400AB2418 /* FeedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B1E741EE0A5B400AB2418 /* FeedUI.swift */; };
@@ -75,6 +76,7 @@
 		D714C5C21ECE87BB00EE67C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D714C5CE1ECE883300EE67C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D760955D1EF2F4FE0084A542 /* Dataservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataservice.swift; sourceTree = "<group>"; };
+		D760955F1EF4594B0084A542 /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		D79B1E6F1EE07AAF00AB2418 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D79B1E711EE0823800AB2418 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		D79B1E731EE0868300AB2418 /* Social-App-FIrebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Social-App-FIrebase.entitlements"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		D70EA8E41ECF763A0086DAF0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D760955F1EF4594B0084A542 /* Posts.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				D79B1E751EE0A5B400AB2418 /* FeedUI.swift in Sources */,
 				D70EA91D1ECF89DF0086DAF0 /* FBLoginButtonUB.swift in Sources */,
 				D760955E1EF2F4FE0084A542 /* Dataservice.swift in Sources */,
+				D76095601EF4594B0084A542 /* Posts.swift in Sources */,
 				D714C5A31ECE87BB00EE67C9 /* SocialAppVC.swift in Sources */,
 				D714C5A11ECE87BB00EE67C9 /* AppDelegate.swift in Sources */,
 				D79B1E771EE90AFD00AB2418 /* PostCell.swift in Sources */,
