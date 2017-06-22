@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -174,14 +174,17 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ab-Km-1w8" customClass="LoginTopViewUV" customModule="Social_App_FIrebase" customModuleProvider="target">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="M6B-yO-ya7">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="M6B-yO-ya7">
                                         <subviews>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="744-Oq-180">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera Icon" translatesAutoresizingMaskIntoConstraints="NO" id="VrP-sU-UVG">
+                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="54" id="opo-eb-mcf"/>
+                                                    <constraint firstAttribute="width" constant="60" id="GRI-6n-6ce"/>
                                                 </constraints>
-                                                <state key="normal" image="Camera Icon"/>
-                                            </button>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="OhX-yO-tRE" appends="YES" id="fSd-cS-xXo"/>
+                                                </connections>
+                                            </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter new post" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KrD-Ap-5Bv">
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -197,6 +200,9 @@
                                                     <constraint firstAttribute="width" constant="52" id="TZz-qU-f7y"/>
                                                 </constraints>
                                                 <state key="normal" image="Post icon"/>
+                                                <connections>
+                                                    <action selector="makePost:" destination="NwJ-2s-tcJ" eventType="touchUpInside" id="FG4-zI-ha4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -270,13 +276,14 @@
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
+                                                        <constraint firstItem="YCb-5S-Rde" firstAttribute="trailing" secondItem="kte-yT-aIR" secondAttribute="trailing" id="0fm-sO-6Ei"/>
                                                         <constraint firstItem="Qn0-Q4-WAp" firstAttribute="top" secondItem="F5g-fn-SQt" secondAttribute="top" constant="5" id="3Rm-sc-Zf6"/>
                                                         <constraint firstAttribute="bottom" secondItem="Qn0-Q4-WAp" secondAttribute="bottom" constant="311.5" id="6CP-I9-Oh9"/>
                                                         <constraint firstAttribute="trailing" secondItem="COc-SF-MNg" secondAttribute="trailing" constant="8" id="EEa-8l-gWd"/>
                                                         <constraint firstItem="Qn0-Q4-WAp" firstAttribute="leading" secondItem="F5g-fn-SQt" secondAttribute="leading" constant="5" id="Hrg-qK-wRc"/>
                                                         <constraint firstItem="Qn0-Q4-WAp" firstAttribute="centerX" secondItem="F5g-fn-SQt" secondAttribute="centerX" id="MNv-f5-b1v"/>
                                                         <constraint firstItem="kte-yT-aIR" firstAttribute="top" secondItem="Qn0-Q4-WAp" secondAttribute="bottom" constant="8" id="RAi-hl-1BX"/>
-                                                        <constraint firstAttribute="trailing" secondItem="YCb-5S-Rde" secondAttribute="trailing" constant="10" id="XQ6-fi-0c8"/>
+                                                        <constraint firstItem="YCb-5S-Rde" firstAttribute="trailing" secondItem="COc-SF-MNg" secondAttribute="trailing" id="Zs0-hU-q4t"/>
                                                         <constraint firstAttribute="bottom" secondItem="YCb-5S-Rde" secondAttribute="bottom" constant="0.5" id="aLS-hu-NrG"/>
                                                         <constraint firstItem="COc-SF-MNg" firstAttribute="leading" secondItem="F5g-fn-SQt" secondAttribute="leading" constant="8" id="jUS-xT-xSD"/>
                                                         <constraint firstAttribute="trailing" secondItem="kte-yT-aIR" secondAttribute="trailing" constant="8" id="wWA-aK-I6e"/>
@@ -289,6 +296,7 @@
                                             <color key="backgroundColor" red="0.8784313725490196" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="F5g-fn-SQt" firstAttribute="leading" secondItem="ism-4H-tQD" secondAttribute="leading" id="oOw-Co-lVw"/>
+                                                <constraint firstItem="F5g-fn-SQt" firstAttribute="centerY" secondItem="ism-4H-tQD" secondAttribute="centerY" id="qSy-Ts-fYn"/>
                                                 <constraint firstAttribute="bottom" secondItem="F5g-fn-SQt" secondAttribute="bottom" id="rhu-0U-K0C"/>
                                                 <constraint firstItem="F5g-fn-SQt" firstAttribute="top" secondItem="ism-4H-tQD" secondAttribute="top" id="uVw-nd-vTp"/>
                                                 <constraint firstAttribute="trailing" secondItem="F5g-fn-SQt" secondAttribute="trailing" id="xcA-oY-gdJ"/>
@@ -325,11 +333,18 @@
                     </view>
                     <connections>
                         <outlet property="helloLabel" destination="o5P-Ui-b3U" id="qyQ-DF-SbA"/>
+                        <outlet property="imageSelect" destination="VrP-sU-UVG" id="za9-Mh-jVp"/>
+                        <outlet property="postText" destination="KrD-Ap-5Bv" id="DqP-pU-FGQ"/>
                         <outlet property="tableView" destination="MRY-aT-x8v" id="Cl1-O5-H04"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="signInVC" id="oAa-JT-QC1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzK-ED-hH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OhX-yO-tRE">
+                    <connections>
+                        <action selector="tappedPic:" destination="NwJ-2s-tcJ" id="OmA-jt-NBO"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="637.60000000000002" y="-495.20239880059972"/>
         </scene>
